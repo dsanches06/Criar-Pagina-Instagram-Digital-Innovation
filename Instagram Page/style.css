@@ -20,7 +20,7 @@ body {
 .instagram-wrapper {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: start; /*alinha elemento de inicio ao fim*/
   width: 60%;
   height: 100vh;
 }
@@ -29,11 +29,52 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
 }
 
-.instagram-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
+.instagram-phone img {
+  height: 50rem;
 }
+
+.instagram-group {
+    display: flex;
+    align-items: center; /*horizontal*/
+    justify-content: space-around; /*vertical*/
+    flex-direction: column; /*alterar para alinhamento em coluna */
+    width: 50%;
+    min-height: 5rem;
+  }
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  margin: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.group:nth-child(1) {
+  /*captura os filhos desse elemento pai*/
+  min-height: 19rem;
+}
+
+.instagram-icon {
+  height: 2rem;
+}
+.instagram-logo {
+  height: 4rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /**/
+}
+
