@@ -39,6 +39,7 @@ body {
   flex-direction: column; /*alterar para alinhamento em coluna */
   width: 50%;
   min-height: 34rem;
+  margin-top: 2.5rem;
 }
 
 .group {
@@ -127,4 +128,31 @@ body {
 }
 .app-downloa:nth-child(2) {
   background-image: url("./img/googleplay-button.png");
+}
+
+/*SITE RESPONSIVO COM  @media queries*/
+
+/* media queries */
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 650px) {
+  body {
+    background: #ffffff;
+  }
+  .instagram-wrapper {
+    width: 90%;
+  }
+  .instagram-phone {
+    display: none;
+  }
+  .instagram-group {
+    width: 100%;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
 }
